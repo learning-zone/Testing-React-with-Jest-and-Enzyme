@@ -39,6 +39,15 @@ describe('Headline Component', () => {
 
     describe('Have NO props', () => {
 
+        let wrapper;
+        beforeEach(() => {
+            wrapper = setUp();
+        });
+
+        test('Should not render', () => {
+            const component = findByTestAttr(wrapper, 'HeadlineComponent');
+            expect(Comment.length).toBe(0);
+        });
     });
 
 });
