@@ -1,16 +1,33 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import Counter from './Counter';
+import App from './App';
+import { findByTestAttr } from './Utils'; 
 
 
-describe("Counter Testing", () => {
+const setUp = (props={}) => {
+  return shallow(<App {...props} />);
+};
 
-  let wrapper  =  shallow(<Counter />);
+describe("APP Component", () => {
+
+  let component;
+  beforeEach(() => {
+    component = setUp();
+  })
+
+  test('Should render the app', () => {
+    const wrapper = findByTestAttr(component, 'AppComponent');
+    expect(wrapper.length).toBe(1);
+  });
   
+  /**
+   * 
+    
   test('renders learn react link', () => {
     //console.log(wrapper.debug());
     expect(wrapper.find("h1").text()).toContain("React Counter App");
   });
+
 
   test("render a button with test of `increment`", () => {
     expect(wrapper.find('#increment-btn').text()).toBe('Increment');
@@ -29,6 +46,7 @@ describe("Counter Testing", () => {
     wrapper.find("#decrement-btn").simulate("click");
     expect(wrapper.find("#counter-value").text()).toBe("0");
   });
+  **/
 
 });
 
