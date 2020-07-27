@@ -1,22 +1,28 @@
 import React from 'react'
 import { shallow } from 'enzyme'
+import { findByTestAttr } from '../../Utils'
 import Header from './Header'
+
+const setUp = (props={}) => {
+    return shallow(<Header {...props} />);
+};
 
 describe('Header Component', () => {
 
     let component;
     beforeEach(() => {
-        component = shallow(<Header />);
+        component = setUp();
         //console.log('BeforEach...');
     })
-    test('It should render without errors', () => {
+
+    test('Should render without errors', () => {
        //console.log(component.debug());
-       const wrapper = component.find('.headerComponent');
+       const wrapper = findByTestAttr(component, 'headerComponent');
        expect(wrapper.length).toBe(1);
     });
 
     test('Should render a logo', () => {
-       const logo = component.find(`[data-test='logoIMG']`);
+       const logo = findByTestAttr(component, 'logoIMG');
        expect(logo.length).toBe(1);
-    })
-})
+    });
+});
