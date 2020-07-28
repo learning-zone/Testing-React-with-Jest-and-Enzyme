@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from './Component/Header/Header'
 import Headline from './Component/Headline/Headline'
+import Counter from './Component/Counter/Counter'
 import './App.scss'
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
       <section className="main">
         <Headline header="propTypes" desc="Validating props in React !" />
         <hr/>
+        <Counter />
       </section>
     </div>
   );
