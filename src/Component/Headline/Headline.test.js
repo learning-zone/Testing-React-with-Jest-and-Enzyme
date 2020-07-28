@@ -1,74 +1,35 @@
 import React from 'react'
 import { shallow } from 'enzyme'
-import { findByTestAttr, checkProps } from '../../Utils'
 import Headline from './Headline'
 
-
-const setUp = (props={}) => {
-    return shallow(<Headline {...props} />);
-}
-
+/**
+ * propTypes() is used runtime type checking for React props and similar objects.
+ * 
+ */
 describe('Headline Component', () => {
  
-   describe('Checking ProTypes', () => {
-
-      test('Should not throw a warning', () => {
-          
-          const expectedProps = {
-              header: 'Test Header',
-              desc: 'Test Desc',
-              tempArr: [{
-                  fName: 'Test fName',
-                  lName: 'Test lName',
-                  email: 'test@email.com',
-                  age: 23,
-                  onlineStatus: false
-              }]
-          };
-          const propsErr = checkProps(Headline, expectedProps);
-          expect(propsErr).toBeUndefined();
-      });
-   });
-
-   describe('Have props', () => {
- 
-       let wrapper;
-       beforeEach(() => {
-           const props = {
-               header: 'Test Header',
-               desc: 'Test Desc'
-           };
-           wrapper = setUp(props);
-       });
-
-       test('Should render without errors', () => {
-          const component = findByTestAttr(wrapper, 'HeadlineComponent');
-          //console.log('component: '+component.debug());
-          expect(component.length).toBe(1);
-       });
- 
-       test('Should render a H1', () => {
-           const h1 = findByTestAttr(wrapper, 'header');
-           expect(h1.length).toBe(1);
-       });
- 
-        test('Should render a desc',  ()=> {
-           const desc = findByTestAttr(wrapper, 'desc');
-           expect(desc.length).toBe(1);
-       });
+    let wrapper;
+    beforeEach(() => {
+        const props = {
+           header: 'Test Header',
+           desc: 'Test Desc'
+        };
+        wrapper = shallow(<Headline {...props} />);
     });
 
-    describe('Have NO props', () => {
+    test('Should render without errors', () => {
+       const component = wrapper.find(`[data-test='HeadlineComponent']`);
+       expect(component.length).toBe(1);
+    });
 
-        let wrapper;
-        beforeEach(() => {
-            wrapper = setUp();
-        });
+    test('Should have title', () => {
+        const title = wrapper.find(`[data-test='header']`);
+        expect(title.length).toBe(1);
+    });
 
-        test('Should not render', () => {
-            const component = findByTestAttr(wrapper, 'HeadlineComponent');
-            expect(Comment.length).toBe(0);
-        });
+    test('Should have description',  ()=> {
+        const desc = wrapper.find(`[data-test='desc']`);
+        expect(desc.length).toBe(1);
     });
 
 });
