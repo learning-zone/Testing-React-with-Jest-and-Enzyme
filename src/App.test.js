@@ -1,23 +1,18 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import App from './App';
-import { findByTestAttr } from './Utils'; 
 
-
-const setUp = (props={}) => {
-  return shallow(<App {...props} />);
-};
 
 describe("APP Component", () => {
 
-  let component;
+  let wrapper;
   beforeEach(() => {
-    component = setUp();
+    wrapper = shallow(<App />);
   })
 
   test('Should render the app', () => {
-    const wrapper = findByTestAttr(component, 'AppComponent');
-    expect(wrapper.length).toBe(1);
+    const component = wrapper.find(`[data-test='AppComponent']`);
+    expect(component.length).toBe(1);
   });
   
   /**
