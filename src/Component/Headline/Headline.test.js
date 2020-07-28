@@ -18,17 +18,17 @@ describe('Headline Component', () => {
     });
 
     test('Should render without errors', () => {
-       const component = wrapper.find(`[data-test='HeadlineComponent']`);
+       let component = wrapper.find(`[data-test='HeadlineComponent']`);
        expect(component.length).toBe(1);
     });
 
     test('Should have title', () => {
-        const title = wrapper.find(`[data-test='header']`);
+        let title = wrapper.find(`[data-test='header']`);
         expect(title.length).toBe(1);
     });
 
     test('Should have description',  ()=> {
-        const desc = wrapper.find(`[data-test='desc']`);
+        let desc = wrapper.find(`[data-test='desc']`);
         expect(desc.length).toBe(1);
     });
 

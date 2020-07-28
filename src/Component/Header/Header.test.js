@@ -25,12 +25,12 @@ describe('Header Component', () => {
     })
 
     test('Should render without errors', () => {
-       const component = wrapper.find(`[data-test='menu-icon']`);
+       let component = wrapper.find(`[data-test='menu-icon']`);
        expect(component.length).toBe(1);
     });
 
     test('Should have a title', () => {
-       const title = wrapper.find(`[data-test='menu-title']`).text();
+       let title = wrapper.find(`[data-test='menu-title']`).text();
        expect(title.includes('News')).toBe(true);
     });
 
