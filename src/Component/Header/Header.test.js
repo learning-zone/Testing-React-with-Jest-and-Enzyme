@@ -1,28 +1,37 @@
 import React from 'react'
 import { shallow } from 'enzyme'
-import { findByTestAttr } from '../../Utils'
 import Header from './Header'
 
-const setUp = (props={}) => {
-    return shallow(<Header {...props} />);
-};
+/**
+ * shallow() method is used to render the single component that we are testing. 
+ * It does not render child components.
+ */
 
+/**
+ * mount() method renders the full DOM including the child components of the parent 
+ * component that we are running the tests.
+ */
+
+/**
+ * render() method has the ability to render to static HTML.
+ * It renders the children.
+ * But this does not have access to React lifecycle methods.
+ */
 describe('Header Component', () => {
 
-    let component;
+    let wrapper;
     beforeEach(() => {
-        component = setUp();
-        //console.log('BeforEach...');
+        wrapper = shallow(<Header />);
     })
 
     test('Should render without errors', () => {
-       //console.log(component.debug());
-       const wrapper = findByTestAttr(component, 'headerComponent');
-       expect(wrapper.length).toBe(1);
+       const component = wrapper.find(`[data-test='menu-icon']`);
+       expect(component.length).toBe(1);
     });
 
-    test('Should render a logo', () => {
-       const logo = findByTestAttr(component, 'logoIMG');
-       expect(logo.length).toBe(1);
+    test('Should have a title', () => {
+       const title = wrapper.find(`[data-test='menu-title']`).text();
+       expect(title.includes('News')).toBe(true);
     });
+
 });
