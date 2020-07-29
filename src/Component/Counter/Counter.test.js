@@ -9,11 +9,6 @@ describe('Counter Component', () => {
         wrapper = shallow(<Counter />);
     });
 
-    test('Should have a title', () => {
-      let title = wrapper.find(`[data-test='counter-title']`).text();
-      expect(title).toContain("Counter App");
-    });
-
     test("Should render a button with `increment`", () => {
       let increment = wrapper.find(`[data-test='increment-btn']`).text();
       expect(increment).toBe('Increment');

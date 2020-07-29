@@ -7,7 +7,7 @@ export default function Counter() {
     const [counter, setcounter] = React.useState(0);
     return (
         <div className="Counter">
-            <h1 data-test="counter-title">Counter App</h1>
+            <h1>Counter App</h1>
             
             <div data-test="counter-value">{counter}</div>
 
