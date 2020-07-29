@@ -9,27 +9,27 @@ describe('Counter Component', () => {
         wrapper = shallow(<Counter />);
     });
 
-    test('renders learn react link', () => {
+    test('Should have a title', () => {
       let title = wrapper.find(`[data-test='counter-title']`).text();
       expect(title).toContain("Counter App");
     });
 
-    test("render a button with test of `increment`", () => {
+    test("Should render a button with `increment`", () => {
       let increment = wrapper.find(`[data-test='increment-btn']`).text();
       expect(increment).toBe('Increment');
     });
 
-    test("render the initial value of state in a div", () => {
+    test("Should render the initial value 0", () => {
        let counter = wrapper.find(`[data-test='counter-value']`).text();
        expect(counter).toBe("0");
     });
 
-    test("render the click event of increment button and increment counter value", () => {
+    test("Should render the click event of increment button", () => {
        wrapper.find(`[data-test='increment-btn']`).simulate("click"); 
        expect(wrapper.find(`[data-test='counter-value']`).text()).toBe("1");
     });
 
-    test("render the click event of decrement button and decrement counter value", () => {
+    test("Should render the click event of decrement button", () => {
        wrapper.find(`[data-test='decrement-btn']`).simulate("click");
        expect(wrapper.find(`[data-test='counter-value']`).text()).toBe("0");
     });
