@@ -2,12 +2,12 @@ import React from 'react'
 import Button from '@material-ui/core/Button'
 
 
-export default function Counter() {
+export default function Event() {
 
     const [counter, setcounter] = React.useState(0);
     return (
         <div className="Counter">
-            <h1>Counter App</h1>
+            <h1>Event Testing</h1>
             
             <div data-test="counter-value">{counter}</div>
 

@@ -1,12 +1,12 @@
 import React from 'react'
 import { shallow } from 'enzyme'
-import Counter from './Counter'
+import Event from './Event'
 
-describe('Counter Component', () => {
+describe('Event Component', () => {
 
     let wrapper;
     beforeEach(() => {
-        wrapper = shallow(<Counter />);
+        wrapper = shallow(<Event />);
     });
 
     test("Should render a button with `increment`", () => {

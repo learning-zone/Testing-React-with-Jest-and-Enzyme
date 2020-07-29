@@ -31,7 +31,7 @@ describe('Header Component', () => {
 
     test('Should have a title', () => {
        let title = wrapper.find(`[data-test='menu-title']`).text();
-       expect(title.includes('News')).toBe(true);
+       expect(title).toMatch('Testing React App');
     });
 
 });

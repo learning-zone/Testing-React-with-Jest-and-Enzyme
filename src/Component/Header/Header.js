@@ -29,9 +29,7 @@ export default function ButtonAppBar() {
           <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu" data-test="menu-icon">
             <MenuIcon />
           </IconButton>
-          <Typography variant="h6" className={classes.title} data-test="menu-title">
-            News
-          </Typography>
+          <Typography variant="h6" className={classes.title} data-test="menu-title">Testing React App</Typography>
           <Button color="inherit">Login</Button>
         </Toolbar>
       </AppBar>
