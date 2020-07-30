@@ -2,6 +2,7 @@ import React from 'react'
 import Header from './Component/Header/Header'
 import Props from './Component/Props/Props'
 import Event from './Component/Event/Event'
+import API from './Component/API/API'
 import './App.scss'
 
 function App() {
@@ -10,8 +11,10 @@ function App() {
       <Header />
       <section className="main">
         <Props header="Props" desc="Validating props in React !" />
-        <hr/>
+        <br/><hr/>
         <Event />
+        <br/><hr/>
+        <API />
       </section>
     </div>
   );
