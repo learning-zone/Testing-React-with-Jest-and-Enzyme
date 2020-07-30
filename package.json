@@ -11,9 +11,9 @@
     "@testing-library/user-event": "^7.1.2",
     "axios": "^0.19.2",
     "check-prop-types": "^1.1.2",
-    "material-table": "^1.63.1",
     "node-sass": "^4.14.1",
     "react": "^16.13.1",
+    "react-data-table-component": "^6.9.8",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1",
     "styled-components": "^5.1.1"
@@ -49,8 +49,8 @@
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.2",
     "enzyme-to-json": "^3.5.0",
+    "jest-canvas-mock": "^2.2.0",
     "prop-types": "^15.7.2",
-    "react-test-renderer": "^16.13.1",
-    "sinon": "^9.0.2"
+    "react-test-renderer": "^16.13.1"
   }
 }
