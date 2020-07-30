@@ -2,7 +2,7 @@ import React from 'react'
 import Button from '@material-ui/core/Button'
 
 
-export default function Event() {
+export default function Events() {
 
     const [counter, setcounter] = React.useState(0);
     return (
