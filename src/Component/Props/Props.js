@@ -3,9 +3,6 @@ import PropTypes from 'prop-types'
 
 class Props extends Component {
 
-    constructor(props) {
-        super(props);
-    }
     render() {
         const { header, desc } = this.props;
 
