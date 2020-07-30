@@ -1,8 +1,8 @@
 import React from 'react'
 import Header from './Component/Header/Header'
 import Props from './Component/Props/Props'
-import Event from './Component/Event/Event'
-import API from './Component/API/API'
+import Events from './Component/Events/Events'
+import RestAPI from './Component/RestAPI/RestAPI'
 import './App.scss'
 
 function App() {
@@ -12,9 +12,9 @@ function App() {
       <section className="main">
         <Props header="Props" desc="Validating props in React !" />
         <br/><hr/>
-        <Event />
+        <Events />
         <br/><hr/>
-        <API />
+        <RestAPI />
       </section>
     </div>
   );
