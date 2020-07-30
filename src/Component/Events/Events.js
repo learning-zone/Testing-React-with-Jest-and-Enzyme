@@ -7,7 +7,7 @@ export default function Events() {
     const [counter, setcounter] = React.useState(0);
     return (
         <div className="Counter">
-            <h1>Event Testing</h1>
+            <h1>Event Test</h1>
             
             <div data-test="counter-value">{counter}</div>
 
