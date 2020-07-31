@@ -2,6 +2,19 @@
 
 <img src="assets/test-react.png" alt="Testing React using Jest and Enzyme" width="800px" />
 
+## Installation
+
+```bash
+# Package Installation
+npm install
+
+# Run the Project
+npm start
+
+# Project Test
+npm test
+```
+
 ## Project Covers
 
 - Props Test
@@ -20,16 +33,3 @@
 - [Material-UI](https://material-ui.com/getting-started/installation/)
 - [Axios](https://github.com/axios/axios)
 - [React Testing Library](https://reactjs.org/docs/testing-recipes.html)
-
-## Installation
-
-```bash
-# Package Installation
-npm install
-
-# Run the Project
-npm start
-
-# Project Test
-npm test
-```
