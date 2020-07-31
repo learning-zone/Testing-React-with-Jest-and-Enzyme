@@ -7,10 +7,10 @@ import './App.scss'
 
 function App() {
   return (
-    <div className="App" data-test="AppComponent">
+    <div className='App' data-test='AppComponent'>
       <Header />
-      <section className="main">
-        <Props header="Props Test" desc="Validating props in React !" />
+      <section className='main'>
+        <Props header='Props Test' desc='Validating props in React !' />
         <br/><hr/>
         <Events />
         <br/><hr/>

@@ -11,34 +11,51 @@ import Events from './Events'
  */
 describe('Events Component', () => {
 
-    let wrapper;
+    let wrapper
     beforeEach(() => {
-        wrapper = shallow(<Events />);
-    });
+        wrapper = shallow(<Events />)
+    })
 
     test('Matches the snapshot', () => {
       const tree = renderer.create(<Events />).toJSON()
       expect(tree).toMatchSnapshot()
     })
 
-    test("Should render a button with `increment`", () => {
-      let increment = wrapper.find(`[data-test='increment-btn']`).text();
-      expect(increment).toBe('Increment');
-    });
+    test('title', () => {
+      let title = wrapper.find(`[data-test='counter-title']`).text()
+      expect(title).toBe('Event & Snapshot Test')
+    })
 
-    test("Should render the initial value 0", () => {
-       let counter = wrapper.find(`[data-test='counter-value']`).text();
-       expect(counter).toBe("0");
-    });
+    test('render a button with `increment`', () => {
+      let increment = wrapper.find(`[data-test='increment-btn']`).text()
+      expect(increment).toBe('Increment')
+    })
 
-    test("Should render the click event of increment button", () => {
-       wrapper.find(`[data-test='increment-btn']`).simulate("click"); 
-       expect(wrapper.find(`[data-test='counter-value']`).text()).toBe("1");
-    });
+    test('render a button with `decrement`', () => {
+      let increment = wrapper.find(`[data-test='decrement-btn']`).text()
+      expect(increment).toBe('Decrement')
+    })
 
-    test("Should render the click event of decrement button", () => {
-       wrapper.find(`[data-test='decrement-btn']`).simulate("click");
-       expect(wrapper.find(`[data-test='counter-value']`).text()).toBe("0");
-    });
+    test('render the initial value 0', () => {
+       let counter = wrapper.find(`[data-test='counter-value']`).text()
+       expect(counter).toBe('0')
+    })
 
-});
+    test('render the click event of increment button', () => {
+       wrapper.find(`[data-test='increment-btn']`).simulate('click') 
+       expect(wrapper.find(`[data-test='counter-value']`).text()).toBe('1')
+    })
+
+    test('render the click event of decrement button', () => {
+       wrapper.find(`[data-test='decrement-btn']`).simulate('click')
+       expect(wrapper.find(`[data-test='counter-value']`).text()).toBe('0')
+    })
+
+})
+
+
+/**
+ * toBe():-  It uses === to check strict equality.
+ * 
+ * toEqual():- It check that two objects have the same value
+ */

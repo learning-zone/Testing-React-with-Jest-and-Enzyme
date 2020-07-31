@@ -6,14 +6,14 @@ export default function Events() {
 
     const [counter, setcounter] = React.useState(0);
     return (
-        <div className="Counter">
-            <h1>Event & Snapshot Test</h1>
+        <div className='Counter'>
+            <h1 data-test='counter-title'>Event & Snapshot Test</h1>
             
-            <div data-test="counter-value">{counter}</div>
+            <div data-test='counter-value'>{counter}</div>
 
-            <Button variant="contained" color="primary" data-test="increment-btn" onClick={() => setcounter(counter + 1)} >Increment</Button>
+            <Button variant='contained' color='primary' data-test='increment-btn' onClick={() => setcounter(counter + 1)} >Increment</Button>
             <br/> <br/>
-            <Button variant="contained" color="primary" data-test="decrement-btn" onClick={() => setcounter((counter > 0) ? (counter - 1) : 0)} >Decrement</Button>
+            <Button variant='contained' color='primary' data-test='decrement-btn' onClick={() => setcounter((counter > 0) ? (counter - 1) : 0)} >Decrement</Button>
         </div>
     )
 }

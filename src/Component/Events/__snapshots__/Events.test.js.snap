@@ -4,7 +4,9 @@ exports[`Events Component Matches the snapshot 1`] = `
 <div
   className="Counter"
 >
-  <h1>
+  <h1
+    data-test="counter-title"
+  >
     Event & Snapshot Test
   </h1>
   <div

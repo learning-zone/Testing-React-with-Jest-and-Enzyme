@@ -20,9 +20,9 @@ export default class RestAPI extends Component {
   componentDidMount() {
     return axios.get(`http://dummy.restapiexample.com/api/v1/employees`)
       .then(response => {
-        const results = response.data.data;
-        //console.log(results);
-        this.setState({ results });
+        const results = response.data.data
+        //console.log(results)
+        this.setState({ results })
       })
       .catch(error => {
         console.log(error)
@@ -34,7 +34,7 @@ export default class RestAPI extends Component {
       <Fragment>
         <h1>RestAPI Test</h1>
         <DataTable
-          title=""
+          title=''
           columns={this.state.columns}
           data={this.state.results}
         />
