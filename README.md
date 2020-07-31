@@ -13,6 +13,9 @@ npm start
 
 # Project Test
 npm test
+
+# Generate Code Coverage Report
+npm run test -- --coverage --watchAll=false
 ```
 
 ## Project Covers
