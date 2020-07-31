@@ -1,7 +1,5 @@
 # Testing React using Jest and Enzyme
 
-> The purpose of this project is to demonstrate *Test Driven Development* (TDD) in React with Jest and Enzyme.
-
 <img src="assets/test-react.png" alt="Testing React using Jest and Enzyme" width="800px" />
 
 ## Project Covers
@@ -9,7 +7,7 @@
 - DOM Testing
 - Event Testing
 - Component Testing
-- Rest API Test
+- Rest API Testing
 - Mock functions
 - Snapshot Testing
 
