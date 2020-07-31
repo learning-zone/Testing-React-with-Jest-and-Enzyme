@@ -4,12 +4,13 @@
 
 ## Project Covers
 
-- DOM Testing
-- Event Testing
-- Component Testing
-- Rest API Testing
+- Props Test
+- Event Test
+- Rest API Test
+- Component Test
 - Mock functions
-- Snapshot Testing
+- DOM Test
+- Snapshot Test
 
 ## Technology
 
