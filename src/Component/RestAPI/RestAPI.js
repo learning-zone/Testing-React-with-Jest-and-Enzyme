@@ -18,11 +18,14 @@ export default class RestAPI extends Component {
   }
   
   componentDidMount() {
-    axios.get(`http://dummy.restapiexample.com/api/v1/employees`)
-      .then(res => {
-        const results = res.data.data;
-        console.log(results);
+    return axios.get(`http://dummy.restapiexample.com/api/v1/employees`)
+      .then(response => {
+        const results = response.data.data;
+        //console.log(results);
         this.setState({ results });
+      })
+      .catch(error => {
+        console.log(error)
       })
   }
 
