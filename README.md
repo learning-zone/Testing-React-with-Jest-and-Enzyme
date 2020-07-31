@@ -1,24 +1,26 @@
-# Testing React with Jest and Enzyme
+# Testing React using Jest and Enzyme
 
 > The purpose of this project is to demonstrate *Test Driven Development* (TDD) in React with Jest and Enzyme.
+
+<img src="assets/test-react.png" alt="Testing React using Jest and Enzyme" width="800px" />
 
 ## Project Covers
 
 - DOM Testing
-- Snapshot Testing
 - Event Testing
 - Component Testing
-- Testing JSX
-- Asynchronous API Test
+- Rest API Test
 - Mock functions
+- Snapshot Testing
 
 ## Technology
 
-- React
-- Jest
-- Enzyme
-- Sinon
-- Material-UI
+- [React](https://create-react-app.dev/docs/getting-started/)
+- [Jest](https://jestjs.io/docs/en/getting-started.html)
+- [Enzyme](https://enzymejs.github.io/enzyme/docs/installation/react-16.html)
+- [Material-UI](https://material-ui.com/getting-started/installation/)
+- [Axios](https://github.com/axios/axios)
+- [React Testing Library](https://reactjs.org/docs/testing-recipes.html)
 
 ## Installation
 
@@ -32,11 +34,3 @@ npm start
 # Project Test
 npm test
 ```
-
-## Resources
-
-- [Create React App](https://create-react-app.dev/docs/getting-started/)
-- [Jest](https://jestjs.io/docs/en/tutorial-react)
-- [Enzyme](https://enzymejs.github.io/enzyme/docs/installation/react-16.html)
-- [React Testing Library](https://reactjs.org/docs/testing-recipes.html)
-- [Sinon](https://sinonjs.org/#get-started)
