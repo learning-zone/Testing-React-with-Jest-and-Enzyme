@@ -50,6 +50,26 @@ npm run test -- --coverage --watchAll=false
      - axios.js
 ```
 
+## Code Coverage Report
+
+```js
+|------------------------|----------|----------|----------|----------|-------------------|
+| File                   |  % Stmts | % Branch |  % Funcs |  % Lines | Uncovered Line #s |
+|------------------------|----------|----------|----------|----------|-------------------|
+|All files               |    84.21 |        0 |       75 |    83.33 |                   |
+| src                    |      100 |      100 |      100 |      100 |                   |
+|  App.js                |      100 |      100 |      100 |      100 |                   |
+| src/Components/Events  |       50 |        0 |    33.33 |       50 |                   |
+|  Events.js             |       50 |        0 |    33.33 |       50 |             14,16 |
+| src/Components/Header  |      100 |      100 |      100 |      100 |                   |
+|  Header.js             |      100 |      100 |      100 |      100 |                   |
+| src/Components/Props   |      100 |      100 |      100 |      100 |                   |
+|  Props.js              |      100 |      100 |      100 |      100 |                   |
+| src/Components/RestAPI |    85.71 |      100 |       80 |    85.71 |                   |
+|  RestAPI.js            |    85.71 |      100 |       80 |    85.71 |                28 |
+|------------------------|----------|----------|----------|----------|-------------------|
+```
+
 ## Technology
 
 - [React](https://create-react-app.dev/docs/getting-started/)
