@@ -28,6 +28,28 @@ npm run test -- --coverage --watchAll=false
 - DOM Test
 - Snapshot Test
 
+## Folder Structure
+
+```js
+ + src
+   + components
+     + Events
+	   + __snapshots__
+	   - Events.js  
+	   - Events.test.js
+	 + Header
+	   - Header.js
+	   - Header.test.js
+	 + Props
+	   - Props.js
+	   - Props.test.js
+	 + RestAPI
+	   - RestAPI.js
+	   - RestAPI.test.js
+   + __mocks__
+     - axios.js
+```
+
 ## Technology
 
 - [React](https://create-react-app.dev/docs/getting-started/)
