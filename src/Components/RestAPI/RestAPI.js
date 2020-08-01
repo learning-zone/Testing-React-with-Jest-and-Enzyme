@@ -25,7 +25,7 @@ export default class RestAPI extends Component {
         this.setState({ results })
       })
       .catch(error => {
-        console.log(error)
+        //console.log(error)
       })
   }
 
