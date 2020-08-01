@@ -1,4 +1,4 @@
-# Testing React using Jest and Enzyme
+# Testing React with Jest and Enzyme
 
 <img src="assets/test-react.png" alt="Testing React using Jest and Enzyme" width="800px" />
 
