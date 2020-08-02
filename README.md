@@ -72,14 +72,14 @@ npm run test -- --coverage --watchAll=false
 
 ## Deploy React App to GitHub Pages
 
-**Step 01**: Install GitHub Pages package as a dev-dependency
+**Step 01: Install GitHub Pages package as a dev-dependency**
 
 ```bash
 # Install Github Pages into repository
 npm install gh-pages --save-dev
 ```
 
-**Step 02**: Add properties to `package.json` file
+**Step 02: Add properties to `package.json` file**
 
 The first property we need to add at the top level `homepage` second we will define this as a string and the value will be `http://{username}.github.io/{repo-name}` {username} is your GitHub username, and {repo-name} is the name of the GitHub repository you created it will look like this:
 
@@ -97,11 +97,11 @@ Second in the existing scripts property we to need to add predeploy and deploy.
 }
 ```
 
-**Step 03**: Create a Github repository and initialize it and add it as a remote in your local git repository.
+**Step 03: Create a Github repository and initialize it**
 
 Now, create a remote GitHub repository with your app name and go back initialize this `git init` add it as remote `git remote add origin git@github.com:learning-zone/testing-react-with-jest-and-enzyme.git`
 
-**Step 04**: Now deploy it to GitHub Pages.
+**Step 04: Deploy to GitHub Pages**
 
 ```bash
 npm run deploy
