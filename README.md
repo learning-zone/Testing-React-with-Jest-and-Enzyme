@@ -72,7 +72,7 @@ npm run test -- --coverage --watchAll=false
 
 ## Deploy React App to GitHub Pages
 
-**Step 01**: We need to install GitHub Pages package as a dev-dependency.
+**Step 01**: Install GitHub Pages package as a dev-dependency
 
 ```bash
 # Install Github Pages into repository
