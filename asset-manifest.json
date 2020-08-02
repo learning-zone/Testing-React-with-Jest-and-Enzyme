@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/testing-react-with-jest-and-enzyme/static/css/main.6c910275.chunk.css",
+    "main.js": "/testing-react-with-jest-and-enzyme/static/js/main.e9bb8019.chunk.js",
+    "main.js.map": "/testing-react-with-jest-and-enzyme/static/js/main.e9bb8019.chunk.js.map",
+    "runtime-main.js": "/testing-react-with-jest-and-enzyme/static/js/runtime-main.15a9d36e.js",
+    "runtime-main.js.map": "/testing-react-with-jest-and-enzyme/static/js/runtime-main.15a9d36e.js.map",
+    "static/js/2.dbe70255.chunk.js": "/testing-react-with-jest-and-enzyme/static/js/2.dbe70255.chunk.js",
+    "static/js/2.dbe70255.chunk.js.map": "/testing-react-with-jest-and-enzyme/static/js/2.dbe70255.chunk.js.map",
+    "index.html": "/testing-react-with-jest-and-enzyme/index.html",
+    "precache-manifest.7b0c233cddd76111d69af99ccdbba881.js": "/testing-react-with-jest-and-enzyme/precache-manifest.7b0c233cddd76111d69af99ccdbba881.js",
+    "service-worker.js": "/testing-react-with-jest-and-enzyme/service-worker.js",
+    "static/css/main.6c910275.chunk.css.map": "/testing-react-with-jest-and-enzyme/static/css/main.6c910275.chunk.css.map",
+    "static/js/2.dbe70255.chunk.js.LICENSE.txt": "/testing-react-with-jest-and-enzyme/static/js/2.dbe70255.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.15a9d36e.js",
+    "static/js/2.dbe70255.chunk.js",
+    "static/css/main.6c910275.chunk.css",
+    "static/js/main.e9bb8019.chunk.js"
+  ]
+}
