@@ -107,7 +107,7 @@ Now, create a remote GitHub repository with your app name and go back initialize
 npm run deploy
 ```
 
-this command will create a branch named gh-pages this branch host your app, and homepage property you created in package.json file hold your link for a live preview, or you can open the branch setting scroll down to GitHub Pages section you will find this:
+this command will create a branch named gh-pages this branch host your app, and homepage property you created in package.json file hold your link for a live preview, or you can open the **repository -->> settings -->> Github Pages** scroll down to GitHub Pages section you will find this:
 
 <img src="assets/github-pages.png" alt="Github Pages" />
 
