@@ -11,5 +11,3 @@ describe('APP Component', () => {
   })
 
 })
-
-
