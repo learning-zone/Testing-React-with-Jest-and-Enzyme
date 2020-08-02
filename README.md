@@ -53,10 +53,9 @@ npm run test -- --coverage --watchAll=false
 ## Code Coverage Report
 
 ```js
+|File                    |  % Stmts | % Branch |  % Funcs |  % Lines | Uncovered Line #s |
 |------------------------|----------|----------|----------|----------|-------------------|
-| File                   |  % Stmts | % Branch |  % Funcs |  % Lines | Uncovered Line #s |
-|------------------------|----------|----------|----------|----------|-------------------|
-|All files               |    84.21 |        0 |       75 |    83.33 |                   |
+|All files               |    88.89 |        0 |       75 |    88.24 |                   |
 | src                    |      100 |      100 |      100 |      100 |                   |
 |  App.js                |      100 |      100 |      100 |      100 |                   |
 | src/Components/Events  |       50 |        0 |    33.33 |       50 |                   |
@@ -65,8 +64,8 @@ npm run test -- --coverage --watchAll=false
 |  Header.js             |      100 |      100 |      100 |      100 |                   |
 | src/Components/Props   |      100 |      100 |      100 |      100 |                   |
 |  Props.js              |      100 |      100 |      100 |      100 |                   |
-| src/Components/RestAPI |    85.71 |      100 |       80 |    85.71 |                   |
-|  RestAPI.js            |    85.71 |      100 |       80 |    85.71 |                28 |
+| src/Components/RestAPI |      100 |      100 |       80 |      100 |                   |
+|  RestAPI.js            |      100 |      100 |       80 |      100 |                   |
 |------------------------|----------|----------|----------|----------|-------------------|
 ```
 
