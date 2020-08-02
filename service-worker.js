@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/testing-react-with-jest-and-enzyme/precache-manifest.7b0c233cddd76111d69af99ccdbba881.js"
+  "/testing-react-with-jest-and-enzyme/precache-manifest.977b66427eebd5d25c6e73f4055a4f91.js"
 );
 
 self.addEventListener('message', (event) => {
