@@ -1,4 +1,4 @@
-# Testing React with Jest and Enzyme
+# Testing React with Jest and Enzyme - [live demo](https://learning-zone.github.io/testing-react-with-jest-and-enzyme/)
 
 <img src="assets/test-react.png" alt="Testing React using Jest and Enzyme" width="800px" />
 
