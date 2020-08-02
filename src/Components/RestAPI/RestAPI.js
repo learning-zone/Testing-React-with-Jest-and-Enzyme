@@ -10,17 +10,17 @@ export default class RestAPI extends Component {
     this.state = {
         results: [],
         columns: [
-          { name: 'Employee', selector: 'employee_name', sortable: true },
-          { name: 'Salary', selector: 'employee_salary', sortable: true  },
-          { name: 'Age', selector: 'employee_age', sortable: true, right: true }
+          { name: 'Name', selector: 'name', sortable: true },
+          { name: 'Email', selector: 'email', sortable: true  },
+          { name: 'Phone', selector: 'phone', sortable: true, right: true }
         ]
     }
   }
   
   componentDidMount() {
-    return axios.get(`http://dummy.restapiexample.com/api/v1/employees`)
+    return axios.get(`https://jsonplaceholder.typicode.com/users`)
       .then(response => {
-        const results = response.data.data
+        const results = response.data
         //console.log(results)
         this.setState({ results })
       })

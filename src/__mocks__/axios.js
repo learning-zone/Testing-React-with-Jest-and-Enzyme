@@ -1,7 +1,7 @@
 const axios = {
   get: jest.fn(() =>  {
     return Promise.resolve({ 
-      data: [{'employee': 'Alex', 'salary': '320', 'age': '21'}] 
+      data: [{'name': 'Alex', 'email': 'alex@melissa.com', 'phone': '4612145112'}] 
     })
   })
 }
