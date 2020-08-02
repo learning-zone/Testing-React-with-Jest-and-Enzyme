@@ -5,14 +5,9 @@ import App from './App'
 
 describe('APP Component', () => {
 
-  let wrapper
-  beforeEach(() => {
-    wrapper = shallow(<App />)
-  })
-
-  test('Should render the app', () => {
-    const component = wrapper.find(`[data-test='AppComponent']`)
-    expect(component.length).toBe(1)
+  test('Should render the app without error', () => {
+    const wrapper = shallow(<App />)
+    expect(wrapper.exists()).toBe(true)
   })
 
 })

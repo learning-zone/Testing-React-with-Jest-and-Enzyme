@@ -7,7 +7,7 @@ import './App.scss'
 
 function App() {
   return (
-    <div className='App' data-test='AppComponent'>
+    <div className='App'>
       <Header />
       <section className='main'>
         <Props header='Props Test' desc='Validating props in React !' />
