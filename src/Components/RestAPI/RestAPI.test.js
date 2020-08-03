@@ -23,7 +23,7 @@ describe('RestAPI Component', () => {
     
     test('fetches successfully data from an API', () => {      
         mockAxios.get.mockImplementationOnce(() =>
-          Promise.resolve({data: [{'name': 'Test Name', 'salary': '420', 'age': '28'}]})
+          Promise.resolve({data: [{'name': 'Test Name', 'email': 'abc@email.com', 'phone': 1654651325}]})
         )
     })
 
