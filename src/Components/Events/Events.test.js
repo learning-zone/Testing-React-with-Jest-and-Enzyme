@@ -26,16 +26,6 @@ describe('Events Component', () => {
       expect(title).toBe('Event & Snapshot Test')
     })
 
-    test('render a button with `increment`', () => {
-      let increment = wrapper.find(`[data-test='increment-btn']`).text()
-      expect(increment).toBe('Increment')
-    })
-
-    test('render a button with `decrement`', () => {
-      let increment = wrapper.find(`[data-test='decrement-btn']`).text()
-      expect(increment).toBe('Decrement')
-    })
-
     test('render the initial value 0', () => {
        let counter = wrapper.find(`[data-test='counter-value']`).text()
        expect(counter).toBe('0')
