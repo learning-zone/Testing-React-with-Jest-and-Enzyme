@@ -21,16 +21,15 @@ describe('RestAPI Component', () => {
         expect(getSpy).toBeCalled()
     })
     
-    test('fetches successfully data from an API', () => {      
-        mockAxios.get.mockImplementationOnce(() =>
-          Promise.resolve({data: [{'name': 'Test Name', 'salary': '420', 'age': '28'}]})
-        )
+    test('fetched successfully datat from an api', () => {
+        const response = [{data: [{'name': 'Alex', 'email': 'alex@gmail.com', 'phone': '54614612152'}]}]
+        mockAxios.get.mockResolvedValue(response)
+    })
+  
+    test('fetches data with error', () => {
+        const response = [{error: 'API Error'}]
+        mockAxios.get.mockRejectedValue(response)
     })
 
-    test('fetches erroneously data from an API', () => {
-        mockAxios.get.mockImplementationOnce(() =>
-          Promise.error({error: 'Error occured while fetching data'})
-        )
-    })
 })
  
