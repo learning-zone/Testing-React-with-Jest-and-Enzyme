@@ -20,13 +20,12 @@ npm run test -- --coverage --watchAll=false
 
 ## Project Covers
 
-- Props Test
-- Event Test
-- Rest API Test
-- Component Test
-- Mock functions
-- DOM Test
-- Snapshot Test
+- Component Testing
+- Props Testing
+- Snapshot Testing
+- Event Testing
+- Mocking function
+- Rest API Testing
 
 ## Folder Structure
 
